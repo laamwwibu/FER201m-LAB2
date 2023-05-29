@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 2</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="copyDiv()">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="images/306706889_227679549582854_624157052745729523_n.png"
+                    style="width: 100px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <form class="d-flex mx-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="m-2 btn btn-success" id="login-button">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-2 col-md-2 col-sm-12 mt-5 sidebar">
+                <nav class="navbar">
+                    <div class="container-fluid d-flex justify-content-lg-center justify-content-md-center justify-content-sm-center">
+                        <ul style="width: 100%;" class="navbar-nav flex-lg-column flex-md-column flex-sm-row flex-row justify-content-around">
+                            <li class="text-center">
+                                <i class="fa-solid fa-house"></i>
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="text-center">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="text-center">
+                                <i class="fa-solid fa-blog"></i>
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Main Content -->
+            <div class="col-lg-10 col-md-10 main-content">
+                <div class="container-fluid heading">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/1-2.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/jabra-sale.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="free-activity">
+                    <div class="container">
+                        <div class="row" id="item-box">
+                            <div class="col-lg-3 col-md-4 col-sm-12" id="item-card">
+                                <div class="card" style="width: 100%">
+                                    <img src="images/3kshop-fiio-m15s-1.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk
+                                            of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 d-flex justify-content-center footer-logo">
+                    <img src="images/306706889_227679549582854_624157052745729523_n.png"
+                        style="width: 100px; height: 100px;" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 footer-info">
+                    <h5 class="footer-title"><i class="fa-solid fa-user-group"></i>Giới thiệu</h5>
+                    <ul>
+                        <li>Giới thiệu về 3K</li>
+                        <li>Thương hiệu</li>
+                        <li>Sản phẩm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 footer-policy">
+                    <h5 class="footer-title"><i class="fa-solid fa-truck-fast"></i>Các chính sách</h5>
+                    <ul>
+                        <li>Bảo mật thông tin cá nhân</li>
+                        <li>Cam kết hàng hóa</li>
+                        <li>Chính sách vận chuyển</li>
+                        <li>Hình thức thanh toán</li>
+                        <li>Hướng dẫn mua trả góp</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 footer-location">
+                    <h5 class="footer-title"><i class="fa-sharp fa-solid fa-location-dot"></i>Danh sách cửa
+                        hàng</h5>
+                    <ul>
+                        <li>14 Nguyễn Văn Giai, P. Đa Kao, Q.1
+                            (028) 38 202 909 – 0914 345 357</li>
+                        <li>6B Đinh Bộ Lĩnh, P.24, Q. Bình Thạnh
+                            (028) 38 202 909 – 0914 345 357</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script>
+        function copyDiv() {
+            var itemBox = document.getElementById("item-card");
+            var container = document.querySelector("#item-box");
+
+            for (var i = 1; i < 8; i++) {
+                var clone = itemBox.cloneNode(true);
+                container.appendChild(clone);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
